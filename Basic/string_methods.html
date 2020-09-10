@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String Methods</title>
+</head>
+<body>
+
+<script>
+    let text = "I started to learn React-Native today. React-Native is a good framework.";
+
+    document.write(text);
+
+    // text length
+    let len = text.length;
+    // alert(len);
+
+    let pos = text.indexOf("today");
+   //  alert(pos);
+
+    let post_last = text.lastIndexOf("Native");
+    // alert(post_last);
+
+    let pos_search = text.search("React");
+    // alert(pos_search);
+
+    let slice_text = text.slice(19,31);
+    // alert(slice_text);
+
+    let substring_text = text.substring(19,25);
+    // alert(substring_text);
+
+    let substr_text = text.substr(19,25);
+    // alert(substr_text);
+
+    // replace text
+    let replace_text = text.replace(/React-Native/g, "reactNative");
+    // alert(replace_text);
+
+    // character process
+    let upper_text = text.toUpperCase();
+    // alert(upper_text);
+
+    let lower_text = text.toLowerCase();
+    // alert(lower_text);
+
+    // merge text
+
+    fname = "John";
+    lname = "Doe";
+    let full_name = fname.concat(" ", lname);
+    // alert(full_name);
+
+    // char
+    let char = text.charAt(0);
+    //alert(char);
+
+    // split
+
+    let split_text ="John;Doe";
+    let list = split_text.split(";");
+    console.log(list);
+
+</script>
+
+</body>
+</html>

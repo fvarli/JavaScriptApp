@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events App</title>
+</head>
+<body>
+
+<input id="number_1" type="text" placeholder="Number 1">
+
+<br><br>
+
+<input id="number_2" type="text" placeholder="Number 2">
+
+<br> <br>
+
+<button onclick="sum()">+</button>
+<button onclick="diff()">-</button>
+<button onclick="multi()">*</button>
+<button onclick="division()">/</button>
+
+<br><br>
+
+<b>Result</b>
+<div id="result">
+</div>
+
+<script>
+
+    let result = document.getElementById("result");
+    let number_1 = document.getElementById("number_1");
+    let number_2 = document.getElementById("number_2");
+
+    function sum(){
+        result.innerHTML = parseInt(number_1.value) + parseInt(number_2.value);
+    }
+
+    function diff(){
+        result.innerHTML = parseInt(number_1.value) - parseInt(number_2.value);
+    }
+
+    function multi(){
+        result.innerHTML = parseInt(number_1.value) * parseInt(number_2.value);
+    }
+
+    function division(){
+        result.innerHTML = parseInt(number_1.value) / parseInt(number_2.value);
+    }
+
+</script>
+
+</body>
+</html>

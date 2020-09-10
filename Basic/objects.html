@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Objects</title>
+</head>
+<body>
+
+<script>
+
+    let car = {
+        name: "BMW",
+        model: "1.16",
+        weight: 1000,
+        color: "white",
+        year: "2009",
+        start: function () {
+            alert("he run car");
+        },
+        drive:  function () {
+            alert("he drives car")
+        },
+        break: function () {
+            alert("he brake")
+        },
+        stop: function () {
+            alert("he stopped car")
+        },
+        get_info: function () {
+            console.log("Car name is " + car.name);
+            console.log("Car model is " + car.model);
+            console.log("Car weight is " + car.weight);
+            console.log("Car color is " + car.color);
+
+            // console.log("Car name is " + this.name);
+        },
+        get_age: function () {
+            return 2020 - this.year;
+        }
+    };
+
+    // console.log(typeof (car));
+    // console.log(car);
+    // console.log(car.name);
+    // console.log(car["model"]);
+
+    car.color = "black";
+    console.log(car);
+
+    // car.start();
+    // car.drive();
+    // car.break();
+    // car.stop();
+
+    car.get_info();
+    console.log("Car age is " + car.get_age());
+
+</script>
+
+</body>
+</html>

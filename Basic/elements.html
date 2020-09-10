@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elements</title>
+</head>
+<body>
+<div id="container">
+    
+</div>
+<p class="result"></p>
+<p class="result"></p>
+
+<input type="text" name="name">
+<br>
+<br>
+<a href="#"></a>
+
+<script>
+    document.getElementById("container").innerHTML="Get Element by ID";
+    console.log(document.getElementsByClassName("result"));
+    document.getElementsByClassName("result")[0].innerHTML = "Get first element";
+    document.getElementsByName("name")[0].value = "Result: " + (2 + 5);
+    document.getElementsByTagName("a")[0].href = "https://ferzendervarli.com";
+    document.getElementsByTagName("a")[0].innerHTML = "https://ferzendervarli.com";
+
+</script>
+</body>
+</html>

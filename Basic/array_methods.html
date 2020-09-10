@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array Methods</title>
+</head>
+<body>
+
+<script>
+
+    /*
+     * length
+     * toString()
+     * join
+     * pop
+     * push
+     * shift
+     * unshift
+     * splice
+     * splice for delete
+     * concat
+     * reverse
+    */
+
+
+    let classA = ["John", "Test", "Jane", "Dove", "Doe"];
+    console.log(classA);
+
+    // length
+    console.log(classA.length);
+
+    //toString()
+    console.log(classA.toString());
+
+    //join()
+    console.log(classA.join("|"));
+
+    // pop()
+    let popItem = classA.pop();
+    console.log(popItem);
+    console.log(classA);
+
+    // push()
+    classA.push("Can");
+    console.log(classA);
+
+    //shift()
+    let shiftItem = classA.shift();
+    console.log(shiftItem);
+    console.log(classA);
+
+    // unshift
+    classA.unshift("John1");
+    console.log(classA);
+
+    // splice
+    classA.splice(2, 0, "John2", "John3");
+    console.log(classA);
+
+    classA.splice(0, 2);
+    console.log(classA);
+
+    // concat()
+    classB = new Array("Jane1", "Jane2", "Jane3", "Jane3");
+    let concatArray = classA.concat(classB);
+    console.log(concatArray);
+
+    // reverse()
+    console.log(classA.reverse());
+
+</script>
+
+</body>
+</html>

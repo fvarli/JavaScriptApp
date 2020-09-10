@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Functions</title>
+</head>
+<body>
+
+<script>
+
+    let person = 1985;
+    let person1 = 1963;
+    let person2 = 1978;
+
+    function name() {
+
+    }
+
+    function calculate(name, age) {
+        return  name + ", your age is "  + (2020 - age) + ".";
+    }
+
+    let per = calculate("John",person);
+    let per1 = calculate("Jane",person1);
+    let per2 = calculate("Joe",person2);
+
+    console.log(per);
+    console.log(per1);
+    console.log(per2);
+
+
+    // C = (9/5) * (F - 32);
+    
+    function to_cel(fahrenheit) {
+        return (9/5) * (fahrenheit -32);
+    }
+
+    alert(to_cel(46));
+    console.log(to_cel(78));
+    document.write(to_cel(124));
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events</title>
+
+    <style>
+        .area{
+            height: 100px;
+            width: 200px;
+            background-color: #555;
+            color: #fff;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<button onclick="this.innerHTML='Calculated!'">Calculate</button>
+<input type="text" onchange="console.log('Changed.')">
+
+<select name="" id="" onchange="document.getElementById('container').innerHTML = this.value;">
+    <option >Slovenia</option>
+    <option >Italy</option>
+    <option >Germany</option>
+</select>
+
+<div id="container"></div>
+<br>
+<div class="area" onmouseover="areaMouseOver()" onmouseout="this.innerHTML='mouse left'"></div>
+
+<script>
+
+    function areaMouseOver() {
+        document.getElementsByClassName("area")[0].innerHTML = "mouse is on this element";
+    }
+
+    function areaMouseOut() {
+        document.getElementsByClassName("area")[0].innerHTML = "mouse left";
+    }
+</script>
+
+</body>
+</html>
