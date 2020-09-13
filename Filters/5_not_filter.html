@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Not</title>
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            $("ul li:not(:contains('e'))").css("border", "1px solid #f00");
+
+        });
+
+    </script>
+
+    <style>
+
+        ul{
+            margin: 0px;
+            padding: 0px;
+            width: 200px;
+        }
+
+        ul li {
+
+            padding:5px 10px;
+            border: 1px solid #eee;
+            margin-bottom: 5px;
+
+        }
+
+        ul li:hover{
+            background-color: #eee;
+            border:1px solid #ccc;
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+<ul>
+    <li>John</li>
+    <li>Eric</li>
+    <li>Fred</li>
+    <li>George</li>
+    <li>Mike</li>
+    <li>Matt</li>
+</ul>
+
+</body>
+</html>
