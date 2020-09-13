@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fadeTo</title>
+
+    <script src="jquery-3.5.1.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+
+            $(".btn_show").click(function(){
+
+                // $(".container").fadeIn();
+                $(".container").fadeIn(2000);
+                // $(".container").fadeIn("slow");
+                // $(".container").fadeIn("fast");
+
+            });
+
+            $(".btn_hide").click(function(){
+
+                // $(".container").fadeOut();
+                $(".container").fadeOut(500);
+                // $(".container").fadeOut("slow");
+                // $(".container").fadeOut("fast");
+
+            });
+
+            $(".btn_toggle").click(function(){
+
+                // $(".container").fadeToggle();
+                $(".container").fadeToggle(1000);
+                // $(".container").fadeToggle("slow");
+                // $(".container").fadeToggle("fast");
+
+            });
+
+            $(".btn_fade_to").click(function () {
+
+                $(".container").fadeTo("1000", 0.5, function () {
+                    alert("It's done!");
+                });
+            });
+
+        });
+
+    </script>
+
+    <style>
+
+        .container{
+            display: none;
+            width: 200px;
+            border: 1px solid #f45134;
+            padding: 10px;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+<button class="btn_show">Show</button>
+<button class="btn_hide">Hide</button>
+<button class="btn_toggle">Show / Hide</button>
+<button class="btn_fade_to">fadeTo</button>
+
+<div class="container">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolorem est ex incidunt magni modi nobis sint unde veniam! Aperiam at eaque eius molestiae nobis quidem rem tempora voluptatibus? Labore!
+</div>
+
+</body>
+</html>

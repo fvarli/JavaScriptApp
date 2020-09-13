@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find</title>
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            $(".btn_find").click(function(){
+
+                $(".container").find("small").css("color", "red");
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+<button class="btn_find">Change</button>
+
+<div class="container"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est hic minus obcaecati pariatur quia quod sequi! A accusantium, alias atque aut facere in libero perspiciatis possimus sapiente sint sit unde. <small>John Doe</small></p>
+</div>
+</body>
+</html>

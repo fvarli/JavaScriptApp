@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Val</title>
+</head>
+<body>
+
+<script src="jquery-3.5.1.min.js"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+
+        $("button.click").click(function () {
+            let data = $("input").val();
+            alert(data);
+        });
+
+        $("#change").click(function () {
+            $("input").val("John Doe");
+        });
+
+        $(".show_city").click(function () {
+            let city = $("select[name='city']").val();
+            alert(city);
+        });
+
+    })
+</script>
+
+<input type="text">
+
+<br><br>
+
+<select name="city" id="">
+    <option value="İstanbul">İstanbul</option>
+    <option value="Ankara">Ankara</option>
+</select>
+
+<br><br>
+
+<button class="click">Click</button>
+<button id="change">Change</button>
+<button class="show_city">Show City</button>
+
+
+</body>
+</html>

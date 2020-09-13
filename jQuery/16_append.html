@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Append</title>
+
+    <script src="jquery-3.5.1.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            $(".add_btn").click(function(){
+
+                $(".element1").append("<p>Adding append!</p>");
+
+            })
+        });
+
+    </script>
+
+</head>
+<body>
+
+<button class="add_btn">Add</button>
+
+<div class="element1">first element</div>
+
+</body>
+</html>

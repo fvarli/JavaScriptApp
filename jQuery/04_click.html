@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Click</title>
+</head>
+<body>
+
+<script src="jquery-3.5.1.min.js"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        $(".my_btn").click(function () {
+            $(".container").css({
+               "color": "red",
+               "font-size":"25px"
+            });
+        });
+
+        $(".click").click(function () {
+            $(".click").css("width","300px")
+        });
+    })
+</script>
+
+<button class="my_btn">Click</button>
+<hr>
+<div class="container">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+</div>
+<hr>
+<div class="click">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+</div>
+</body>
+</html>

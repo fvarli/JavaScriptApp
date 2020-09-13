@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>after</title>
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            $(".add_btn").click(function(){
+
+                $(".element1").after("<p>New adding element</p>");
+
+            });
+
+        });
+
+    </script>
+
+
+</head>
+<body>
+
+<button class="add_btn">Add</button>
+
+<div class="element1">first element</div>
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show</title>
+
+    <script src="jquery-3.5.1.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            $(".show_btn").click(function(){
+
+                $(".container").show(2000);
+
+            });
+
+        });
+
+    </script>
+
+    <style>
+
+        .container{
+            display: none;
+            width: 300px;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #eee;
+        }
+    </style>
+
+</head>
+<body>
+
+<button class="show_btn">Show</button>
+
+<div class="container">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cum eius eum iste magni mollitia neque quos sit voluptatibus! Amet aperiam illum magni molestias quibusdam similique sit temporibus. Et, optio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam aut deleniti dolores eum eveniet facilis iusto laborum maiores minus molestias natus, nemo nesciunt optio quasi quis quisquam rem rerum.
+</div>
+
+</body>
+</html>

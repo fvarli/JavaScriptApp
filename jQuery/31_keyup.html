@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Keyup</title>
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            $("input").keydown(function(){
+
+                $(".result").text("You clicked a key.");
+
+            });
+
+            $("input").keyup(function(){
+
+                $(".result").text("You left a key.");
+
+            });
+
+        });
+
+    </script>
+
+
+</head>
+<body>
+
+<input type="text">
+<div class="result"></div>
+
+</body>
+</html>

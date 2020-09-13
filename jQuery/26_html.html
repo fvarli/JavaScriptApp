@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML</title>
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            $(".btn_bring").click(function(){
+
+                let data = $(".container").html();
+
+                alert(data);
+            });
+
+            $(".btn_add").click(function(){
+
+                $(".container2").html("<p style='color:red'>test test test</p>");
+
+            });
+
+        });
+
+    </script>
+
+</head>
+<body>
+
+<button class="btn_bring">Bring</button>
+<button class="btn_add">Ekle</button>
+
+<div class="container"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est hic minus obcaecati pariatur quia quod sequi! A accusantium, alias atque aut facere in libero perspiciatis possimus sapiente sint sit unde. </p> <a href="#">Delete</a>
+</div>
+
+<div class="container2">
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Change</title>
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+
+            $(".name").change(function(){
+
+                let value = $(this).val();
+
+                $(".result").text(value + " " + $(".result").text());
+
+            });
+
+            $(".last_name").change(function(){
+
+                let value = $(this).val();
+
+                $(".result").text($(".result").text() + " " + value);
+
+            });
+
+            $("#select_city").change(function(){
+
+                let value = $(this).val();
+
+                $(".city").text(value);
+
+            });
+
+        });
+
+    </script>
+
+</head>
+<body>
+
+<input type="text" class="name">
+<input type="text" class="last_name">
+<div class="result"></div>
+<hr>
+
+<select id="select_city">
+    <option value="İstanbul">İstanbul</option>
+    <option value="Ankara">Ankara</option>
+</select>
+<div class="city"></div>
+</body>
+</html>
