@@ -8,7 +8,7 @@ $(document).ready(function () {
             phone : $("#phone").val()
         };
 
-        $.post("http://localhost/JavaScriptApp/jQuery-App/phone_book/api.php", data, function(response){
+        $.post("http://localhost/JavaScriptApp/5-jQuery-App/phone_book/api.php", data, function(response){
             if(response == "1"){
                 alert("It has been successfully saved.");
                 console.log("done");
@@ -20,7 +20,7 @@ $(document).ready(function () {
     });
 
     $(".refresh_btn").click(function () {
-        $.get("http://localhost/JavaScriptApp/jQuery-App/phone_book/list.php",{},function (response) {
+        $.get("http://localhost/JavaScriptApp/5-jQuery-App/phone_book/list.php",{},function (response) {
 
             jsonData = JSON.parse(response);
 

@@ -5,7 +5,7 @@
 if(isset($_POST["full_name"]) && isset($_POST["email"]) && isset($_POST["phone"])){
 
     try {
-        $db = new PDO("mysql:host=localhost;dbname=JavaScriptApp;charset=utf8", "root","hyOP.28!dsEd");
+        $db = new PDO("mysql:host=localhost;dbname=JavaScriptApp;charset=utf8", "root","");
     }catch (PDOException $e){
         echo $e->getMessage();
         die();
